@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>Site Daniel</title>
+    <meta name="author" content="Daniel Silva">
+    <meta name="Description" content="Portifólio">
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+
+    .bemvindo {
+      float: left;
+      width: 100%;
+      padding: 50px;
+      height:125px; 
+      text-align: center;
+    }
+
+    .danielsilva {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height:196px; 
+    }
+
+    .servicos {
+      float: left;
+      width: 100%;
+      padding: 0px;
+
+    }
+
+    .jobs {
+      float: left;
+      width: 100%;
+      padding: 0px;
+      height:320px;
+      margin: 0px; 
+    }
+
+    .contato {
+      float: left;
+      width: 100%;
+      padding: 0px;
+      height:440px; 
+      margin: 0px;
+    }
+
+    .rodape {
+      float: left;
+      width: 100%;
+      padding: 10px;
+      height:75px; 
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 0px;
+      height:100%; 
+    }
+
+    .principal:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    nav ul {
+
+      list-style: none;
+      background-color: #ffffff;
+      text-align: right;
+      padding: 0px;
+      margin: 0px;
+
+    }
+
+    nav li{
+
+      font-family: 'Osvald', sans-serif;
+      font-size: 1em;
+      line-height: 40px;
+      height: 105px;
+      border-bottom: 0px solid #004996;
+      display: inline-block;
+      margin-right: 0px;
+    }
+
+    nav a{
+      text-decoration: none;
+      color: #000000;
+      display: block;
+      transition: 1s background-color;
+    }
+
+    nav a:hover{
+      background-color: #54d7ef;
+    }
+
+    nav a:focus {
+      background-color: #ffffff;
+      color: #444;
+      cursor: default;
+    }
+
+    p
+    {
+      font-family: 'Osvald', sans-serif;
+      font-size: 1em;
+      color: #ffffff; 
+      text-align: center; 
+    }
+
+    nav{
+      width: 100%;
+      height: 105px;
+      border: 0px solid #000000; 
+      padding: 0px;
+      margin:0px;
+      position: sticky;
+      top:0;
+    }
+
+    /* FORMULÁRIO */
+
+    input[type=text], select, textarea {
+      width: 598px;
+      padding: 20px;
+      border: 0px;
+      border-radius: 0px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 10px 10px 10px 0;
+      display: inline-block;
+    }
+
+    input[type=submit] {
+      background-color: #54d7ef;
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 0px;
+      cursor: pointer;
+      float: right;
+    }
+
+    input[type=submit]:hover {
+      background-color: ##60d7ee;
+    }
+
+    .container {
+      position: relative;
+      left:25%;
+      width: 640px;
+      border-radius: 0px;
+      background-color: #000000;
+      padding: 20px;
+  
+
+    }
+
+    .col-75 {
+      float: left;
+      width: 595px;
+      margin-top: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row_form:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 200px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 640px;
+        margin-top: 0;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="principal">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eleven.html">Portifólio</a></li>
+        <li><a href="mike.html">Prêmios</a></li>
+        <li><a href="will.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="bemvindo" style="background-color:#ffffff;">
+      <h2>Seja bem-vindo ao site de Daniel Silva</h2>
+    </div>
+
+    <div class="danielsilva" style="background-color:#aa6;">
+      <h2>Sobre</h2>
+    </div>
+
+    <div class="servicos" style="background-color:#aa9;">
+     <img src="servicos.png" alt="serviços" width="100%" >
+    </div>
+
+    <div class="jobs" style="background-color:#a58;">
+
+      <div class="row">
+
+        <div class="column" style="background-color:#aaa;">
+          <a target="_blank" href="motta.png">
+            <img src="motta.png" alt="viação motta" width="100%" >
+          </a>  
+        </div>
+
+        <div class="column" style="background-color:#bbb;">
+          <a target="_blank" href="transporte.png">
+            <img src="transporte.png" alt="Campanha Amigos do Transporte Vega" width="100%" >
+          </a>
+        </div>
+
+        <div class="column" style="background-color:#ccc;">
+          <a target="_blank" href="rr.png">
+            <img src="rr.png" alt="Identidade Visual Rubens Rodrigues Fotografia" width="100%" >
+          </a>
+        </div>
+      </div>
+
+      <div class="jobs" style="background-color:#a58;">
+
+        <div class="row">
+
+          <div class="column" style="background-color:#aaa;">
+            <a target="_blank" href="amigos.png">
+              <img src="amigos.png" alt="Campanha Amigos do Transporte" width="100%" >
+            </a>  
+          </div>
+
+          <div class="column" style="background-color:#bbb;">
+            <a target="_blank" href="deuzinho.png">
+              <img src="deuzinho.png" alt="Campanha Deputado Federal Deuzinho" width="100%" >
+            </a>
+          </div>
+
+          <div class="column" style="background-color:#ccc;">
+            <a target="_blank" href="enapa.png">
+              <img src="enapa.png" alt="Enapa Encontros Nacional de Grupos de Apoio à Adoção" width="100%" >
+            </a>
+          </div>
+        </div>
+
+      <div class="bemvindo" style="background-color:#FFFFFF;">
+        <h2><b>Quer saber mais? Entre em Contato.</b></h2>
+      </div>
+
+      <div class="contato" style="background-color:#FFFFFF;">
+        <div class="container">
+          <form action="/action_page.php">
+            <div class="row_form">
+              <div class="col-75">
+                <input type="text" id="fname" name="nome" placeholder="Seu nome">
+              </div>
+            </div>
+            <div class="row_form">
+              <div class="col-75">
+                <input type="text" id="lname" name="e-mail" placeholder="Seu e-mail">
+              </div>
+            </div>
+            <div class="row_form">
+              <div class="col-75">
+                <textarea id="subject" name="mensagem" placeholder="Sua Mensagem.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row_form">
+              <input type="submit" value="ENVIAR">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="rodape" style="background-color:#aaa;">
+        <h2>Rodapé</h2>
+      </div>
+
+
+    </div>
+
+  </body>
+  </html>
