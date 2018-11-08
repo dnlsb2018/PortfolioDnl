@@ -10,15 +10,47 @@ body{
 	padding: 15px 15px;
 }
 
+.icon-bar{
+	background-color: #00d8f0;
+}
+
+#menu-mobile{
+	background-color: #f0f6f7;
+	position: absolute;
+	right: 10px;
+}
+
+@media (max-width: 767px){
+	.header{
+		align-items: start;
+	}
+	.menu{
+		display: none;
+	}
+}
+
 .link-menu{
 	font-size: 1.7rem;
 	font-weight: bold;
 	color: #000;
 }
 
-.link-menu:hover{
+.link-menu:hover, .link-menu:focus{
 	background-color: transparent !important;
 	color: #000;
+}
+
+.link-menu::after{
+	content: "";
+	display: table;
+	width: 0;
+	height: 4px;
+	background-color: #00d8f0;
+	transition: .5s;
+}
+
+.link-menu:hover::after{
+	width: 100%;	
 }
 
 .titulo{
@@ -35,8 +67,8 @@ body{
 	text-align: center;
 }
 
-.servicos{
-	margin-top: 158px;
+.servicos, .premios{
+	margin-top: 160px;
 }
 
 .servicos p{
@@ -51,7 +83,7 @@ body{
 	padding: 0;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px){	
 	.jobs .container{
 		padding: 0 30px;
 	}
